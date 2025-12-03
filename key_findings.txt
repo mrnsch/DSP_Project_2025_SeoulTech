@@ -1,0 +1,77 @@
+================================================================================
+KEY FINDINGS: News Bias and Audience Influence Analysis
+================================================================================
+
+1. BEST MODEL SELECTION
+--------------------------------------------------------------------------------
+Dictionary Method:    Method C
+Clustering Algorithm: K-Means
+Silhouette Score:     0.6330
+
+Reasoning: This combination achieved the highest silhouette score,
+indicating well-separated and cohesive clusters.
+
+2. BIAS-INFLUENCE RELATIONSHIP
+--------------------------------------------------------------------------------
+Overall Correlation: -0.3510
+
+Finding: MODERATE NEGATIVE correlation detected.
+Media outlets with higher unethical language usage tend to have
+LOWER audience influence. This suggests that ethical reporting
+is associated with greater public trust and reach.
+
+3. CLUSTER CHARACTERISTICS
+--------------------------------------------------------------------------------
+Number of clusters identified: 2
+
+Cluster profiles:
+
+  Cluster 0: High Bias + High Influence
+    Size: 16 outlets
+    Avg Bias: 0.0969
+    Avg Influence: 0.8861
+
+  Cluster 1: High Bias + Low Influence
+    Size: 2 outlets
+    Avg Bias: 0.4596
+    Avg Influence: -0.8542
+
+4. EXTREME CASES
+--------------------------------------------------------------------------------
+
+Most biased:      시사IN (Bias: 0.5024)
+Least biased:     OBS (Bias: 0.0221)
+Most influential: 조선일보 (Influence: 3.2786)
+Least influential: 내일신문 (Influence: -2.4534)
+
+5. METHODOLOGICAL INSIGHTS
+--------------------------------------------------------------------------------
+N-gram TF-IDF combination proved most effective.
+Weighted n-grams successfully identified bias patterns.
+
+K-Means clustering effectively grouped similar media outlets.
+
+6. PRACTICAL IMPLICATIONS
+--------------------------------------------------------------------------------
+- Media outlets can improve influence by reducing biased language
+- Audience trust correlates with ethical reporting practices
+- Clear clusters suggest distinct media ecosystem segments
+- Methodology can be applied to other languages/markets
+
+7. LIMITATIONS
+--------------------------------------------------------------------------------
+- Bias measured through unethical language, not political orientation
+- Influence based on search volume, not comprehensive engagement
+- Cross-sectional analysis; causation cannot be inferred
+- Limited to 18 major Korean media outlets
+
+8. FUTURE RESEARCH
+--------------------------------------------------------------------------------
+- Incorporate political bias measurement (left/right orientation)
+- Add temporal analysis to track changes over time
+- Expand to demographic-segmented influence metrics
+- Include social media engagement alongside search data
+
+================================================================================
+END OF ANALYSIS
+================================================================================

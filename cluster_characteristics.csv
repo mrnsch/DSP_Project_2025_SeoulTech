@@ -1,0 +1,3 @@
+﻿Cluster,Size,Avg_Bias,Avg_Influence,Characteristics,Media_List
+0,16,0.09685230636250478,0.886144429476629,High Bias + High Influence,"KBS, MBC, OBS, SBS, YTN, 경향신문, 국민일보, 내일신문, 동아일보, 문화일보, 서울신문, 세계일보, 조선일보, 중앙일보, 한겨레, 한국일보"
+1,2,0.45957489433168464,-0.8542471067927548,High Bias + Low Influence,"시사IN, 아시아투데이"
