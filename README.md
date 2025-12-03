@@ -100,6 +100,8 @@ The main finding is best represented by the scatter plot:
 
 ## <br>Repository Structure
 
+### Notebooks and Workflow
+
 The core pipeline is sequential across the three main notebooks:
 
 | File/Folder                                  | Description                                                                                                                                                                                                                 |
@@ -108,7 +110,14 @@ The core pipeline is sequential across the three main notebooks:
 | `Dictionary_And_Clustering_Comparison.ipynb` | Systematic execution of the **6 model combinations** and storage of all evaluation metrics in `comparison_metrics.csv`.                                                                                                     |
 | `Final_Model_Selection.ipynb`                | Loads comparison data, selects the optimal model, performs final K=2 clustering, generates all final plots (`03_best_model_clustering.png`, `04_cluster_radar_chart.png`), and extracts key insights to `key_findings.txt`. |
 | `DSPproposal_20102127HwangSeongmin.pdf`      | Original project proposal.                                                                                                                                                                                                  |
-| `comparison_metrics.csv`                     | Output file containing Silhouette scores and other metrics for all 6 model trials.                                                                                                                                          |
+
+### <br>Data Pipeline
+
+| Notebook                                     | Input Files                                                                                                                                                                                | Output Files                                                                                                         |
+| :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| `Project_DSP_methodABC_visualization.ipynb`  | • `talksets-train-1.json` to `talksets-train-5.json` (in `data_aihub/` folder)<br>• `datalab_all.xlsx` (Naver DataLab)<br>• `NewsResult_20241127-20251127` (BigKinds)                     | • `bias_scores_method1.csv`<br>• `bias_scores_method2.csv`<br>• `bias_scores_method3.csv`<br>• `influence_data.csv` |
+| `Dictionary_And_Clustering_Comparison.ipynb` | • `bias_scores_method1.csv` (Method A: N-gram CountVectorizer)<br>• `bias_scores_method2.csv` (Method B: TF-IDF lexical_units)<br>• `bias_scores_method3.csv` (Method C: N-gram TF-IDF)<br>• `influence_data.csv` | • `clustering_results.csv`<br>• `comparison_metrics.csv`<br>• Multiple visualization PNG files                       |
+| `Final_Model_Selection.ipynb`                | • `clustering_results.csv`<br>• `comparison_metrics.csv`                                                                                                                                   | • `final_model_results.csv`<br>• `cluster_characteristics.csv`<br>• `key_findings.txt`<br>• Multiple visualization PNG files |
 
 ---
 
